@@ -13,17 +13,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-        <handlers accessPolicy="Read, Script">
-          <remove name="WebDAV" />
-          <remove name="ExtensionlessUrlHandler-ISAPI-4.0_64bit" />
-          <add name="ExtensionlessUrlHandler-ISAPI-4.0_64bit"
-             path="*."
-             verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS"
-             modules="IsapiModule"
-             scriptProcessor="%windir%\Microsoft.NET\Framework64\v4.0.30319\aspnet_isapi.dll"
-             preCondition="classicMode,runtimeVersionv4.0,bitness64"
-             responseBufferLimit="0" />
-       </handlers>
+        
         <title>My Webpage</title>
     </head>
     <body>
@@ -78,7 +68,17 @@
         <div class="name">
           <h2>I'd love to hear from you</h2>
         </div>
-
+<handlers accessPolicy="Read, Script">
+          <remove name="WebDAV" />
+          <remove name="ExtensionlessUrlHandler-ISAPI-4.0_64bit" />
+          <add name="ExtensionlessUrlHandler-ISAPI-4.0_64bit"
+             path="*."
+             verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS"
+             modules="IsapiModule"
+             scriptProcessor="%windir%\Microsoft.NET\Framework64\v4.0.30319\aspnet_isapi.dll"
+             preCondition="classicMode,runtimeVersionv4.0,bitness64"
+             responseBufferLimit="0" />
+       </handlers>
           <!-- form starting  -->
           <form class="form-horizontal"
                 method="post" action="contact.php">
