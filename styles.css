@@ -330,3 +330,54 @@ label{
 .form-control , #inputEmail{
   width: 100%;
 }
+
+@media screen and (max-width: 481px){
+  form, div#submit {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  div.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+margin-rigth: auto; margin-left: auto;
+margin-bottom: 30px;
+
+
+  }
+  .container {
+    width: 100%;
+    padding: 10px;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .container1 { flex-direction: column; width: 100%;
+
+    }
+    #contact {
+      padding-top: 150px;
+    }
+
+  .card:not(:first-child) {
+    margin-rigth: auto; margin-left: auto;
+  }
+
+  .card:hover {
+    transform: none;
+    transition: none;
+  }
+
+  .card:hover ~ .card {
+    position: relative;
+    left: auto;
+    transition: none;
+  }
+
+
+
+}
+
+
