@@ -14,8 +14,7 @@ $subject = "This is the subject line";
 $txt ="Name = ". $name . "\r\n  Email = "
     . $email . "\r\n Message =" . $message;
 
-$headers = "From: ruslana.khlopuk@gmail.com" . "\r\n" .
-            "CC: ruslana.khlopuk@gmail.com";
+$headers = "From: noreply@demosite.com" . "\r\n";
 if($email != NULL) {
     mail($to, $subject, $txt, $headers);
 }
