@@ -310,9 +310,23 @@ body {
 .button {
   border: 1px solid black;
   padding: 7px 15px;
+  background-color: white;
+  margin: 40px;
+
 }
 .button:hover {
 
   color: #FFB533;
   border: 1px solid #FFB533;
+}
+form, div#submit {
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+label{
+  width: 100px;
+}
+.form-control , #inputEmail{
+  width: 100%;
 }
