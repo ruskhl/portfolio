@@ -24,7 +24,9 @@
       <div id="rk">
         <a href="#main">RK</a>
       </div>
-      <div id="main" class="container">
+
+      <section id="main" class="container">
+
         <div class="color image_container">
           <img class="image" src="images/main.png" alt="main picture">
           <div class="line">
@@ -33,13 +35,11 @@
             <h5 class='lineUp'>Other than coding, my interests include walking outside, meeting interesting people, yoga, cooking.</h5>
           </div>
           <buttom class="button" type="button" onclick="NewTabResume()" >RESUME</buttom>
-
-
         </div>
-      </div>
+      </section>
 
 
-      <div id="my_projects" class="container">
+      <section id="my_projects" class="container">
         <div class="name">
           <h2>Check out my projects</h2>
         </div>
@@ -61,10 +61,16 @@
             <img class="image_prog" src="images/something2.png" alt="something2">
           </div>
         </div>
-      </div>
+        <div class ="column" >
+          <button class="button row" type="button" onclick="NewTabpage1()">PAGE 1</button>
+          <button class="button row" type="button" onclick="NewTabpage2()">PAGE 2</button>
+          <button class="button row" type="button" onclick="NewTabpage3()">PAGE 3</button>
+          <button class="button row" type="button" onclick="NewTabpage4()">PAGE 4</button>
+        </div>
+      </section>
 
 
-      <div id="contact" class="container">
+      <section id="contact" class="container">
         <div class="name">
           <h2>I'd love to hear from you</h2>
         </div>
@@ -74,39 +80,16 @@
           </label>
           <label>
             Your message:
-            <textarea class ="form-control" name="message" required></textarea>
+            <textarea class ="form-control" id ="message" name="message" required></textarea>
           </label>
-          <!-- your other form fields go here -->
-          
           <button class="button" type="submit">Send</button>
         </form>
+      </section>
 
 
-
-
-        </div>
-
-
-
-
-
-
-        <script>
-            function myFunction(x) {
-              x.classList.toggle("change");
-            }
-         </script>
-         <script src="script.js"></script>
-         <script>
-          function toggleNav() {
-            document.body.classList.toggle("nav-open");
-          }
-          </script>
-          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-
+      <script src="script.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
     </body>
