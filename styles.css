@@ -311,7 +311,10 @@ body {
   border: 1px solid black;
   padding: 7px 15px;
   background-color: white;
-  margin: 40px;
+  margin: 25px auto 25px auto;
+  
+
+  width: 150px;
 
 }
 .button:hover {
@@ -323,11 +326,16 @@ form, div#submit {
   width: 700px;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
 }
+
 label{
-  width: 100px;
+  width: 100%;
 }
-.form-control , #inputEmail{
+.form-control {
   width: 100%;
 }
 
@@ -379,5 +387,3 @@ margin-bottom: 30px;
 
 
 }
-
-

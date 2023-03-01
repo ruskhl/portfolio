@@ -68,38 +68,19 @@
         <div class="name">
           <h2>I'd love to hear from you</h2>
         </div>
-        <form method="post" action="https://forms.un-static.com/forms/656b788e2c47bbe8b6320635ae6e59cca907ce32" onsubmit="thankyou()>
+        <form action="https://formspree.io/f/mqkobqqz" method="POST">
+          <label>Your email:
+            <input class ="form-control" type="email" name="email" required>
+          </label>
+          <label>
+            Your message:
+            <textarea class ="form-control" name="message" required></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          
+          <button class="button" type="submit">Send</button>
+        </form>
 
-            <div class="form-group row">
-              <label for="inputName" class="col-sm-2 col-form-label">Name</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputName" placeholder="Please enter your name" required>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-              <div class="col-sm-10">
-                <!--div class="input-group-prepend"><i class="input-group-text fa fa-envelope"></i></div-->
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputMessage" class="col-sm-2 col-form-label">Message</label>
-              <div class="col-sm-10">
-                <textarea name="inputMessage" cols="40" rows="8" class="form-control" required></textarea>
-              </div>
-            </div>
-            <!--div class="form-group row" id="submit" -->
-            <div class="text-center">
-              <!--div class="text-center col-sm-10"-->
-                <button type="submit"  class="button">SEND</button>
-
-              <!--/div-->
-            </div>
-            <div class="text-center">
-              <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
-            </div>
-          </form>
 
 
 
